@@ -1,0 +1,47 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "Lider Fem",
+    description:
+      "Es un programa que tiene como objetivo impulsar los liderazgos de mujeres accionando en su Ciudad en diferentes sectores: arte y cultura, educación, medio ambiente, protección animal, grupos vulnerables, bienestar y salud, deportes, política, empresarial.",
+    icon: "mdi:handshake",
+  },
+  {
+    title: "Potencial Fem",
+    description:
+      "Es un programa que tiene como objetivo empoderar a las mujeres trabajando cuatro pilares: Fuerte, Feliz, EMpoderada y EMprendedora con técnicas y procesos que le permitan desarrollarse de manera integral.",
+    icon: "mdi:graph-line",
+  },
+  {
+    title: "Fems con causa",
+    description:
+      "Son actividades altruistas y de responsabilidad social que promueven la prevención de situaciones de riesgo en la sociedad, así como la realización de actividades que se suman a causas que requieren apoyo.",
+    icon: "mdi:heart",
+  },
+];
+---
+
+<ContentSection title="¿Qué somos?" id="features">
+  <Fragment slot="lead">
+    Somos una <span class="text-primary">organización</span> que impulsa acciones
+    en beneficio de la <span class="text-primary">sociedad </span>a través de
+    tres programas<span class="text-primary"> fundamentales:</span>.
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="size-16 rounded-full border-2 border-current p-3">
+            <Icon name={icon} class="size-full" />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

@@ -1,0 +1,128 @@
+---
+import CompatibilityList from "~/components/compatibility-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { CompatibilityItem } from "~/types";
+
+const showroom: Array<CompatibilityItem> = [
+  {
+    title: "Belleza",
+    icon: "mdi:woman",
+    url: "",
+  },
+  {
+    title: "Ropa",
+    icon: "mdi:clothes-hanger",
+    url: "",
+  },
+  {
+    title: "Calzado",
+    icon: "mdi:shoe-heel",
+    url: "",
+  },
+  {
+    title: "Joyería",
+    icon: "mdi:diamond-stone",
+    url: "",
+  },
+  {
+    title: "Regalos",
+    icon: "mdi:gift-open-outline",
+    url: "",
+  },
+  {
+    title: "Alimentos",
+    icon: "mdi:food-fork-drink",
+    url: "",
+  },
+];
+
+const coworking: Array<CompatibilityItem> = [
+  {
+    title: "Nutrición",
+    icon: "mdi:food-apple",
+    url: "",
+  },
+  {
+    title: "Spa",
+    icon: "mdi:spa",
+    url: "",
+  },
+  {
+    title: "Dental",
+    icon: "mdi:dentist",
+    url: "",
+  },
+  {
+    title: "Fisioterapia",
+    icon: "mdi:human",
+    url: "",
+  },
+  {
+    title: "Psicólogia",
+    icon: "mdi:psychology-outline",
+    url: "",
+  },
+  {
+    title: "Marketing",
+    icon: "mdi:cash-check",
+    url: "",
+  },
+];
+
+const formacion: Array<CompatibilityItem> = [
+  {
+    title: "Cursos",
+    icon: "mdi:teacher",
+    url: "",
+  },
+  {
+    title: "Talleres",
+    icon: "mdi:application-edit-outline",
+    url: "",
+  },
+  {
+    title: "Conferencias",
+    icon: "mdi:speak",
+    url: "",
+  },
+  {
+    title: "Certificaciones",
+    icon: "mdi:paper-edit-outline",
+    url: "",
+  },
+  {
+    title: "Networking",
+    icon: "mdi:transit-connection-variant",
+    url: "",
+  },
+  {
+    title: "Círculo de mujeres",
+    icon: "mdi:woman-woman",
+    url: "",
+  },
+];
+---
+
+<ContentSection title="Nuestro Centro" id="compatibility">
+  <Fragment slot="lead">
+    <span class="text-primary">Fems Center</span> es una plataforma de crecimiento
+    en instalaciones diseñadas con espacios adecuados para la <span
+      class="text-primary">exhibición, venta y promoción</span
+    > de productos de emprendedoras locales.
+  </Fragment>
+  <CompatibilityList
+    items={showroom}
+    title="Showroom"
+    url="https://femscenter.com/servicios/asociadas"
+  />
+  <CompatibilityList
+    items={coworking}
+    title="Coworking"
+    url="https://femscenter.com/servicios/asociadas"
+  />
+  <CompatibilityList
+    items={formacion}
+    title="Desarrollo personal y profesional"
+    url="https://femscenter.com/actividades/personales"
+  />
+</ContentSection>

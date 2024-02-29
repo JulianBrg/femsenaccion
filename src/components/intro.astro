@@ -1,0 +1,40 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "~/components/content-section.astro";
+import Carrousel from "~/components/Carrousel.astro";
+import CarrouselEx from "~/components/CarouselExam.astro";
+import MySwiper from "~/components/MySwiper.jsx";
+
+const widths = [3000, 100];
+const sizes = "(min-width: 640px) 42vw, 70vw";
+---
+
+<ContentSection title="1.ª  Feria de la mujer." id="intro">
+  <!-- <Carrousel  /> -->
+  <!-- <CarrouselEx  /> -->
+  <MySwiper client:load />
+  <Icon slot="eyebrow" name="womanface" class="size-32" />
+  <Fragment slot="lead">
+    Evento llevado a cabo en el patio de las columnas <span class="text-primary"
+      >Parque Ecológico</span
+    > Tehuácan, Puebla.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://facebook.com/events/s/1er-feria-de-la-mujer-fems-en-/833265348560943/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+      target="_blank"
+    >
+      <Icon name="mdi:event" class="size-8" />
+      <span>Ver evento</span>
+    </a>
+    <a
+      href="https://www.google.com/maps/place/Salon+Patio+De+Las+Columnas/@18.4664064,-97.3941617,20z/data=!4m6!3m5!1s0x85c5bcd6115db72b:0xf059f4a8e0cf8c50!8m2!3d18.466381!4d-97.3938962!16s%2Fg%2F11hb5pr6xv?hl=es-419&entry=ttu"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+      target="_blank"
+    >
+      <Icon name="mdi:map-marker" class="size-8" />
+      <span>Ubicación</span>
+    </a>
+  </div>
+</ContentSection>
