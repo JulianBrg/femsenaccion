@@ -1,8 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import astronautImage from "~/assets/woman-face.png";
-import HeroImage from "~/components/hero-image.astro";
-import Starfield from "~/components/starfield.astro";
+import womanFace from "~/assets/woman-face.png";
 
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
@@ -10,28 +8,32 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
 
 <section class=`relative h-full bg-[#4f245a]`>
   <!-- <Starfield /> -->
-  <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
-    <HeroImage />
-  </div>
+
   <div class="relative grid h-full place-items-center sm:grid-cols-2">
-    <h2
+    <div
       class="flex flex-col items-center gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
     >
       <!-- <Icon name="logomark" class="size-20 text-white md:size-15" /> -->
-      <div
-        class="bg-gradient-to-r from-white via-pink-300 to-white inline-block text-transparent bg-clip-text text-center font-extrabold tracking-tighter text-4xl"
+      <h1
+        class="inline-block bg-gradient-to-r from-white via-pink-100 to-white bg-clip-text text-center font-extrabold tracking-tighter text-transparent sm:text-xl text-xs"
       >
-        Impulsando el liderazgo, empoderamiento, 
+        Fems en Acción por México
+      </h1>
+      <h2
+        class="inline-block bg-gradient-to-r from-white via-pink-300 to-white bg-clip-text text-center font-extrabold tracking-tighter text-transparent text-4xl"
+      >
+        Impulsando el liderazgo, empoderamiento,
         <br /> bienestar y desarrollo integral de las mujeres.
-      </div>
-    </h2>
+      </h2>
+    </div>
+
     <div
       id="astronaut"
       class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
     >
       <Image
         class="h-full w-full object-cover"
-        src={astronautImage}
+        src={womanFace}
         widths={widths}
         sizes={sizes}
         loading="eager"
