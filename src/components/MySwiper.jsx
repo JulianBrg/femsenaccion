@@ -19,6 +19,7 @@ export default function MySwiper() {
                 className="md:mySwiper "
             >
                 <div className="lg:h-full">
+                    <SwiperSlide><img src="https://firebasestorage.googleapis.com/v0/b/fems-bd30e.appspot.com/o/fems%20en%20accion%2F1.png?alt=media&token=35d9f5ad-e51c-46ea-a5d9-437018c30d03" alt="img slide" /></SwiperSlide>
                     <SwiperSlide><img src="https://firebasestorage.googleapis.com/v0/b/fems-bd30e.appspot.com/o/fems%20en%20accion%2F2.png?alt=media&token=d06ec02f-c4e5-475f-8f2e-6e019a6a7d3e" alt="img slide" /></SwiperSlide>
                     <SwiperSlide><img src="https://firebasestorage.googleapis.com/v0/b/fems-bd30e.appspot.com/o/fems%20en%20accion%2F3.png?alt=media&token=c0f1a749-e5d9-43d7-97b2-dea43b471465" alt="img slide" /></SwiperSlide>
                     <SwiperSlide><img src="https://firebasestorage.googleapis.com/v0/b/fems-bd30e.appspot.com/o/fems%20en%20accion%2F4.png?alt=media&token=1b57e29d-9a91-42a0-90c4-446e99f7eeca" alt="img slide" /></SwiperSlide>
@@ -41,7 +42,6 @@ export default function MySwiper() {
                     <SwiperSlide><img src="https://firebasestorage.googleapis.com/v0/b/fems-bd30e.appspot.com/o/fems%20en%20accion%2F21.png?alt=media&token=697e7ba0-4b8c-492f-9a98-debee41943df" alt="img slide" /></SwiperSlide>
                     <SwiperSlide><img src="https://firebasestorage.googleapis.com/v0/b/fems-bd30e.appspot.com/o/fems%20en%20accion%2F22.png?alt=media&token=2a35b55a-1e15-40dc-af07-86cbdbf2924f" alt="img slide" /></SwiperSlide>
                     <SwiperSlide><img src="https://firebasestorage.googleapis.com/v0/b/fems-bd30e.appspot.com/o/fems%20en%20accion%2F23.png?alt=media&token=78757bf4-ecd3-4f72-9668-facb0e36e466" alt="img slide" /></SwiperSlide>
-                    <SwiperSlide><img src="https://firebasestorage.googleapis.com/v0/b/fems-bd30e.appspot.com/o/fems%20en%20accion%2F1.png?alt=media&token=35d9f5ad-e51c-46ea-a5d9-437018c30d03" alt="img slide" /></SwiperSlide>
                 </div>
             </Swiper>
         </>
